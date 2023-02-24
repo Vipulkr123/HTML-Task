@@ -6,6 +6,7 @@
 .container {
     width: auto !important;
 }
+
 @media (max-width:992px){
     .container  {
     margin: 0 !important;
@@ -59,6 +60,7 @@
 @media (max-width:992px) {
     .search-sm {
         width: auto;
+        margin-bottom: 15px;
     }
 }
 
@@ -98,17 +100,217 @@
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
 }
 
+.product-list {
+    overflow-x: hidden;
+}
+
 div a {
 text-decoration: none;
 color: #000;
 font-size: 14px;
 }
 
-.product-box {
-    
+.product-box { 
 display: flex;
 flex-direction: row;
+
 }
+
 .header-items {
 width: 850px;
+}
+
+/* Electroni  */
+
+.card{
+    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+ .common-heading{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     padding: 5px 20px;
+     margin-top: 20px;
+     box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+ }
+ .common-heading-left h1{
+     font-size: 20px;
+     font-weight: 400;
+     padding:auto;
+ }
+ .common-heading-left h2{
+     font-size: 15px;
+     padding: 5px 0px;
+     color: rgb(145,141,138) ;
+     font-weight: 200;
+ }
+ .common-heading-right button{
+     width: 90px;
+     height: 40px;
+     font-size: 18px;
+     background-color: #2874f0;
+     border: none;
+     color: white;
+     border-radius: 2px;
+ }
+ .common-row{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     max-height: 366px;
+     margin: 10px 0px;
+ }
+ .common-col{
+     text-align: center;
+     line-height: 22px;
+ }
+ .common-col img{
+     width: 69px;
+     height: 150px;
+     transition: 300ms;
+ }
+ .common-col img:hover{
+     transform: scale(0.9);
+ }
+ .common-col h3,h4,h6{
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     cursor: pointer;
+ }
+ .common-col h3{
+     margin-top: 10px;
+     font-size: 16px;
+ }
+ .common-col h4{
+     color: green;
+     font-size: 14px;
+     font-weight: 300;
+ }
+ .common-col h6{
+    color: rgb(161,161,161);
+    font-size: 12px;
+    font-weight: 100;
+ }
+
+ .view-btn {
+     float: right;
+     margin-right: 20px;
+     width: 85px;
+     height: 35px;
+     font-size: 14px;
+     background-color: #2874f0;
+     border: none;
+     color: white;
+     border-radius: 2px;
+     display: flex;
+     align-items: center;
+     margin-top: 10px;
+ }
+
+ .title-heading {
+    margin: 15px;
+    float: left;
+ }
+
+ .slider-btn {
+    height: 120px;
+    margin-top:90px;
+    margin-bottom: 90px;
+    color: #000 !important;
+    background-color:#f9f9f9;
+    opacity: 1;
+    border:none;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.carousel-control-prev {
+    width: 50px !important;
+    margin-top: 8%;
+    box-shadow: 0 4px 1px 0 rgb(0 0 0 /16%);
+}
+
+/* Swiper  */
+
+.swiper-body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .swiper-container {
+      position:relative;
+      width: 90vw;
+      height: 300px;
+  }
+  .swiper-container > .swiper-slide__content {
+    position:absolute;
+    top:0;
+  }
+  
+  .swiper-slide {
+    display:flex;
+    background: #fff;
+    align-items: center;
+    justify-content:center;
+    transition:all 200ms linear;
+    min-width: 200px;
+  }
+
+
+  /* Timer  */
+
+  #timer {
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+    
+    display: inline-flex;
+}
+
+#timer div {
+    display: inline-block;
+    margin-top: 18px;
+    min-width: 25px;
+    color: #B1CDF1;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-flex;
+}
+
+.swiper-btn {
+    width: 50px !important;
+    height: 120px !important;
+    margin-left: 0px;
+    color: #000 !important;
+    background-color:#f9f9f9;
+    opacity: 1;
+    border:none;
+    border-radius: 0px 2px 2px 0px;
+}
+
+.shop-now {
+    margin-left: 15px;
+}
+
+.swiper-button-prev {
+    left: 0 !important;
+    top: 100px !important;
+}
+
+.swiper-button-next {
+    right: 0 !important;
+    top: 100px !important;
+}
+
+@media only screen and (max-width:992px) {
+    .ads-img {
+        display: none;
+    }
+}
+
+.fa-clock {
+    margin-top: 6px;
 }
